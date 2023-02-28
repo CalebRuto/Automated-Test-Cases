@@ -13,8 +13,8 @@ Poimapper Login
 
 Forgot Password
     Open browser    ${url}    chrome
-    Input Text    id=username    caleb
-    Input Text    id=databaseName    test
+    Input Text    id=username    #insert username
+    Input Text    id=databaseName    #insert account
     Click Button    class=btn.btn-primary.btn-sm.login-btn
     Click link    xpath://a[text()='Forgot password?']
     Set Browser implicit wait    10
@@ -30,10 +30,10 @@ Change Account
 Remember me for 7 Days
     Open browser    ${url}    chrome
     Set Browser Implicit Wait    5
-    Input Text    id=username    caleb
-    Input Text    id=databaseName    test
+    Input Text    id=username    #insert username
+    Input Text    id=databaseName    #insert account
     Click Button    class=btn.btn-primary.btn-sm.login-btn
-    Input Text    id=passkey    4!8dt9&#@4xhju2%i4p&
+    Input Text    id=passkey    #insert password
     Select checkbox    name=rememberme
     Click Button    class=btn.btn-primary.btn-sm.login-btn
     Set Selenium Speed    3 seconds
@@ -43,8 +43,8 @@ Remember me for 7 Days
 
 *** Keywords ***
 Login
-    Input Text    id=username    caleb
-    Input Text    id=databaseName    test
+    Input Text    id=username    #insert username
+    Input Text    id=databaseName    #insert account
     Click Button    class=btn.btn-primary.btn-sm.login-btn
-    Input Text    id=passkey    4!8dt9&#@4xhju2%i4p&
+    Input Text    id=passkey    #insert password
     Click Button    class=btn.btn-primary.btn-sm.login-btn
